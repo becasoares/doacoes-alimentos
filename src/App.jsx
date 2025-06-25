@@ -6,13 +6,13 @@ import Home from './screens/home'
 import Form from './screens/form'
 
 function App() {
-  return (
-    <>
-    <Home/>
-    <Form/>
-    </>
-    
-  )
+  const [queroDoar, setQueroDoar] = useState(false)
+
+  if (queroDoar == true) {
+    return (<Form setQueroDoar/>)
+  } else {Voltar
+    return (<Home setQueroDoar={setQueroDoar}/>)
+  }
 }
 
 export default App

@@ -1,4 +1,8 @@
-function Home () {
+function Home (props) {
+    function queroDoar() {
+      props.setQueroDoar(true)
+    }
+
     return (
         <>
         <div id="header"></div>
@@ -6,7 +10,7 @@ function Home () {
   <section class="hero">
     <h2>Ajude quem precisa com um gesto simples: doe alimentos!</h2>
     <p>Transforme solidariedade em ação. Sua doação pode mudar vidas.</p>
-    <a href="#formulario" class="btn">Quero Doar</a>
+    <a href="#formulario" class="btn" onClick={queroDoar}>Quero Doar</a>
   </section>
 
   <main>

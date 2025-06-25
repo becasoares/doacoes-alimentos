@@ -1,5 +1,6 @@
 function Form () {
     return (
+        <>
             <section id="formulario">
                 <h2>Formulário de Doação</h2>
                 <form>
@@ -18,6 +19,9 @@ function Form () {
                     <button type="submit">Enviar Doação</button>
                 </form>
             </section>
+            <a href="#formulario" className="btn">Voltar</a>
+        </>
+            
     )
 }
 
